@@ -4,6 +4,7 @@ export default function dashBoard() {
     return (
         <div>
             hellos dashboard
+    
         </div>
     )
 }
