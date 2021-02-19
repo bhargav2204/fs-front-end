@@ -8,7 +8,7 @@ const loading = () => (
 
 // Containers
 const DefaultLayout = React.lazy(() => import("../containers/DefaultLayout/index"));
-const SignIn = React.lazy(() => import("../components/user/signIn"));
+const SignIn = React.lazy(() => import("../components/project-manager/index"));
 const ProtectedRoute = React.lazy(() => import("../helpers/route/ProtectedRoute"));
 
 class App extends Component {
@@ -18,9 +18,9 @@ class App extends Component {
         <React.Suspense fallback={loading()}>
           <Switch>
             <Redirect from="/" exact to="/dashboard" />
-            <Route path="/signin" name="Login Page" component={SignIn} />
-            <ProtectedRoute path="/dashboard" component={DefaultLayout} />
-            <ProtectedRoute path="/" component={DefaultLayout} />
+            <Route path="/projectmanager" name="Login Page" component={SignIn} />
+            {/* <ProtectedRoute path="/dashboard" component={DefaultLayout} />
+            <ProtectedRoute path="/" component={DefaultLayout} /> */}
           </Switch>
         </React.Suspense>
       </Router>

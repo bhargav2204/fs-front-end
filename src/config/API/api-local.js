@@ -1,5 +1,5 @@
 const protocol = "https";
-const host = "";
+const host = "98fnhm3quj.execute-api.ap-south-1.amazonaws.com/dev/FSE/";
 const port = "";
 const trailUrl = "";
 
