@@ -7,9 +7,9 @@ const loading = () => (
 );
 
 // Containers
-const DefaultLayout = React.lazy(() => import("../containers/DefaultLayout/index"));
+// const DefaultLayout = React.lazy(() => import("../containers/DefaultLayout/index"));
 const SignIn = React.lazy(() => import("../components/project-manager/index"));
-const ProtectedRoute = React.lazy(() => import("../helpers/route/ProtectedRoute"));
+// const ProtectedRoute = React.lazy(() => import("../helpers/route/ProtectedRoute"));
 
 class App extends Component {
   render() {

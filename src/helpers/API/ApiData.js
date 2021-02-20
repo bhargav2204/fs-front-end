@@ -1,5 +1,5 @@
-import { API } from "../../config/API/api.config";
-import Auth from "../Auth";
+import { API } from "../../config/api/api.config";
+
 import * as authUtil from "../../utils/auth.util";
 export const BaseURL = API.endpoint + "/";
 const axios = require("axios").default;

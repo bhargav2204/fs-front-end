@@ -1,5 +1,4 @@
 import API_DEV from "./api-dev";
-import API_LOCAL from "./api-local";
 import API_PROD from "./api-prod";
 const hostname = window.location.hostname;
 const port = window.location.port;
