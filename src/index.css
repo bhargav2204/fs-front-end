@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+th.MuiTableCell-root.MuiTableCell-head{
+  border-bottom: 2px solid;
+}
+td.MuiTableCell-root.MuiTableCell-body{
+  border: none;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.makeStyles-button-5.MuiButton-containedPrimary.MuiButton-containedSizeLarge.MuiButton-sizeLarge{
+  float: right;
+  background: #66b1ff;
+    border-color: #66b1ff;
+    color: #FFF;
+}
+tr:hover{
+  background-color: #66b1ff;
+}

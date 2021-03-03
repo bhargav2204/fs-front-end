@@ -8,7 +8,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import ApiService from '../../ApiService';
-import ProjectList from "./project-list";
+import FormList from "./form-list";
 import {
   FormControl,
   FormControlLabel,
@@ -100,7 +100,7 @@ export default function ProjectManager() {
   return (
     <div>
       <Card className={classes.root} variant="outlined">
-      <div align="center">Projects Manager</div>
+      <div align="center">Forms Manager</div>
         <CardContent>
           <div onClick={handleClickOpen}>
             <Button name={"Create Project"} icon />
@@ -276,7 +276,7 @@ export default function ProjectManager() {
             </div>
           </DialogActions>
         </Dialog>
-        <ProjectList />
+        <FormList />
       </Card>
     </div>
   );

@@ -20,40 +20,41 @@ const useStyles = makeStyles({
 export default function BasicTable() {
   const classes = useStyles();
   const apiService = new ApiService()
-  const [project,setProjectData]=useState([])
+  const [questions,setQuestionsData]=useState([])
   useEffect(() => {
-  getProjects()
+  getQuestions()
 }, [])
-const getProjects = async () => {
-  const data = await apiService.getProject();
-  setProjectData(data)
+const getQuestions = async () => {
+  const data = await apiService.getQuestions();
+  setQuestionsData(data)
   console.log("getPro",data);
   
 }
 
   return (
     <TableContainer component={Paper}>
+      
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell align="start">Project Name</TableCell>
-            <TableCell align="start">Service Line</TableCell>
-            <TableCell align="start">Update By</TableCell>
+            <TableCell align="start">Questions Group Name</TableCell>
+            <TableCell align="start">Version</TableCell>
+            <TableCell align="start">Photo Label Listing</TableCell>
+            <TableCell align="start">Updated By</TableCell>
             <TableCell align="start">Updated</TableCell>
-            <TableCell align="start">Action</TableCell>
 
            
           </TableRow>
         </TableHead>
         <TableBody>
-          {project.map((row) => (
+          {questions.map((row) => (
             <TableRow key={row}>
               <TableCell align="start">
-                {row.projectName}
+                {row.questionGroupName}
               </TableCell>
-              <TableCell align="start">Inspections</TableCell>
+              <TableCell align="start">V1</TableCell>
+              <TableCell align="start">{row.photoLabelListing}</TableCell>
               <TableCell align="start">{row.updatedBy}</TableCell>
-              <TableCell align="start">{row.photoOrientation}</TableCell>
               <TableCell align="start">{row.form}</TableCell>
               
            </TableRow>
